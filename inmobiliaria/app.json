@@ -1,4 +1,10 @@
 {
-  "name": "inmobiliaria",
-  "displayName": "inmobiliaria"
+  "expo": {
+    "name": "inmobiliaria",
+    "slug": "inmobiliaria",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
 }

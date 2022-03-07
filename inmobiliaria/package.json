@@ -1,29 +1,25 @@
 {
   "name": "inmobiliaria",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint ."
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
   },
   "dependencies": {
-    "react": "17.0.2",
-    "react-native": "0.67.3"
+    "@expo/vector-icons": "^12.0.5",
+    "expo": "~44.0.2",
+    "expo-splash-screen": "~0.14.1",
+    "expo-status-bar": "~1.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-web": "0.17.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.5",
-    "@babel/runtime": "^7.17.2",
-    "@react-native-community/eslint-config": "^3.0.1",
-    "babel-jest": "^27.5.1",
-    "eslint": "^8.10.0",
-    "jest": "^27.5.1",
-    "metro-react-native-babel-preset": "^0.69.0",
-    "react-test-renderer": "17.0.2"
+    "@babel/core": "^7.12.9"
   },
-  "jest": {
-    "preset": "react-native"
-  }
+  "private": true
 }
