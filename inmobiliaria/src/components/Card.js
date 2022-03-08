@@ -9,13 +9,13 @@ const Card = ({ card }) => {
   return (
     <View style={styles.cardContainer}>
       <ImageCards card={card} />
-      <View style={styles.starContainer}>
-        <IconAndText name="star" size={24} color="yellow" description={card.startRange} condition='Ionicons'/>
-      </View>
       <View style={styles.container}>
-        <Text style={styles.title}>{card.name}</Text>
+        <Text style={styles.text}>{card.name}</Text>
         <BodyDetails card={card} />
-        <Text style={styles.title}>{card.rentCost}</Text>
+        <Text style={styles.text}>{card.rentCost}</Text>
+        <View style={styles.heartContainer}>
+          <IconAndText name="heart-circle" size={38} color="#47b074" condition='Ionicons' />
+        </View>
       </View>
     </View>
   );
@@ -26,22 +26,23 @@ export default Card;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.BG,
-    marginVertical: 15,
+    margin: 15,
   },
-  title: {
-    fontSize: 39,
+  text: {
+    fontSize: 20,
     color: 'black',
+    fontWeight: 'bold',
   },
   cardContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    backgroundColor: '#f5fdff',
+    borderRadius: 17,
+    margin: 10,
   },
-  starContainer: {
+  heartContainer: {
     position: 'absolute',
-    marginHorizontal: 50,
-    marginTop: 70,
-    backgroundColor: 'white',
-    borderRadius: 5,
+    right: -15,
+    bottom: -8,
   }
 });

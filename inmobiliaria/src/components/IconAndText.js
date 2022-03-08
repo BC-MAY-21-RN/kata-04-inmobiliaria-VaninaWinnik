@@ -19,8 +19,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   description: {
-    fontSize: 20,
+    fontSize: 17,
     color: 'black',
     marginLeft: 10,
+    fontWeight: 'bold',
   },
 });
